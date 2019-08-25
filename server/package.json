@@ -1,0 +1,19 @@
+{
+  "name": "forecast-io-geeklet-server",
+  "version": "1.0.0",
+  "description": "Node server to re-serve the embedable Forecast.io weather forecast with tweaks for GeekTool.",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/KyleBoyer/forecast-io-geeklet.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kyle Boyer",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "request": "^2.88.0"
+  }
+}
