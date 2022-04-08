@@ -31,7 +31,7 @@ CLLocationManager *manager;
         CLPlacemark *myPlacemark = [placemarks objectAtIndex:0];
         NSString *city = myPlacemark.locality;
         NSString *neighborhood = myPlacemark.subLocality;
-        NSString *combined = [NSString stringWithFormat:@"%@, %@", neighborhood, city];
+        NSString *combined = neighborhood ? [NSString stringWithFormat:@"%@, %@", neighborhood, city] : city;
          printf("<body style='overflow:hidden;'><iframe src='http://localhost:8080/?lat=%f&lon=%f&name=%s' width='100%%' height='100%%' style='overflow:hidden;' scrolling='no' frameBorder='0'></iframe></body>", coordinate.latitude, coordinate.longitude, [combined UTF8String]);
         exit(0);
      }];
